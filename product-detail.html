@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piece Detail — MAISON RELIQUE</title>
+  <meta name="description" content="Detailed historical, material, and structural assessment of our antique and vintage furniture collection pieces.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts: Cormorant Garamond & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       GLOBAL NAVBAR (DESKTOP, TABLET & MOBILE)
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo with MR Monogram -->
+      <a href="index.html" class="brand-logo" aria-label="Maison Relique Homepage">
+        <span class="brand-monogram" aria-hidden="true">
+          <svg class="monogram-svg" width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="14" fill="#3A2921" class="monogram-bg"/>
+            <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#B08A57" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+            <path d="M32 9 C30 13 26 14 24 14 C26 15 30 16 32 20 C34 16 38 15 40 14 C38 14 34 13 32 9 Z" fill="#B08A57"/>
+            <path d="M32 55 C30 51 26 50 24 50 C26 49 30 48 32 44 C34 48 38 49 40 50 C38 50 34 51 32 55 Z" fill="#B08A57"/>
+            <g>
+              <path d="M15 43 L15 21 L18.5 21 L26.5 36.5 L34.5 21 L38 21 L38 43 L34.5 43 L34.5 26.5 L27.8 39.5 L25.2 39.5 L18.5 26.5 L18.5 43 Z" fill="#F5EFE4"/>
+              <path d="M31 43 L31 21 L41.5 21 C45.5 21 48 23.5 48 27 C48 29.5 46.5 31.5 44 32.5 L49 43 L44.8 43 L40.2 33 L34.8 33 L34.8 43 Z M34.8 29.2 L41.2 29.2 C43.2 29.2 44.5 28.2 44.5 26.8 C44.5 25.4 43.2 24.5 41.2 24.5 L34.8 24.5 Z" fill="#B08A57"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text-group">
+          <span class="brand-title">Maison Relique</span>
+          <span class="brand-subtitle">Antique &amp; Vintage Furniture</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation (1281px+) -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        
+        <!-- Home Dropdown -->
+        <div class="nav-dropdown-wrapper">
+          <button type="button" class="dropdown-toggle nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dropdown-menu" role="menu" aria-labelledby="homeDropdownBtn">
+            <a href="index.html" class="dropdown-item" role="menuitem">Home 1</a>
+            <a href="home2.html" class="dropdown-item" role="menuitem">Home 2</a>
+          </div>
+        </div>
+        
+        <!-- Direct Menu Links (Full Navigation) -->
+        <a href="our-story.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="journal.html" class="nav-link">Gallery</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Controls (Theme, RTL, Login, Hamburger) -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="icon-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <!-- RTL / LTR Toggle Button -->
+        <button type="button" class="icon-btn rtl-toggle-btn" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Direction">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"></path><path d="M14 6l6 6-6 6"></path><path d="M10 18l-6-6 6-6"></path></svg>
+        </button>
+
+        <!-- Desktop Book a Viewing CTA Button (1281px+) -->
+        <a href="contact.html#enquiry" class="btn btn-primary nav-cta-btn">Book a Viewing</a>
+
+        <!-- Hamburger Menu Button (Visible on Tablet & Mobile) -->
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE & TABLET DRAWER NAVIGATION (USER GLOBAL RULE)
+       ============================================================ -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+
+  <nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile and Tablet Navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Maison Relique">
+        <span class="brand-monogram" aria-hidden="true">
+          <svg class="monogram-svg" width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="14" fill="#3A2921" class="monogram-bg"/>
+            <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#B08A57" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+            <g>
+              <path d="M15 43 L15 21 L18.5 21 L26.5 36.5 L34.5 21 L38 21 L38 43 L34.5 43 L34.5 26.5 L27.8 39.5 L25.2 39.5 L18.5 26.5 L18.5 43 Z" fill="#F5EFE4"/>
+              <path d="M31 43 L31 21 L41.5 21 C45.5 21 48 23.5 48 27 C48 29.5 46.5 31.5 44 32.5 L49 43 L44.8 43 L40.2 33 L34.8 33 L34.8 43 Z M34.8 29.2 L41.2 29.2 C43.2 29.2 44.5 28.2 44.5 26.8 C44.5 25.4 43.2 24.5 41.2 24.5 L34.8 24.5 Z" fill="#B08A57"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text-group">
+          <span class="brand-title">Maison Relique</span>
+          <span class="brand-subtitle">Antique &amp; Vintage Furniture</span>
+        </span>
+      </a>
+      <button type="button" class="icon-btn" id="drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <ul class="drawer-nav-list">
+        <!-- Home Submenu -->
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-nav-link drawer-submenu-toggle" aria-expanded="false">
+            <span>Home</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="drawer-submenu">
+            <a href="index.html" class="drawer-sublink">Home 1</a>
+            <a href="home2.html" class="drawer-sublink">Home 2</a>
+          </div>
+        </li>
+
+        <li class="drawer-nav-item">
+          <a href="our-story.html" class="drawer-nav-link">About</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="products.html" class="drawer-nav-link active">Products</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="journal.html" class="drawer-nav-link">Gallery</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="blog.html" class="drawer-nav-link">Blog</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="contact.html" class="drawer-nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Controls in Drawer -->
+      <div class="drawer-controls">
+        <button type="button" class="drawer-control-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <span class="theme-btn-label">Dark Mode</span>
+        </button>
+
+        <button type="button" class="drawer-control-btn rtl-toggle-btn" aria-label="Toggle Direction">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"></path><path d="M14 6l6 6-6 6"></path><path d="M10 18l-6-6 6-6"></path></svg>
+          <span class="rtl-btn-label">RTL View</span>
+        </button>
+      </div>
+
+      <!-- Drawer CTAs -->
+      <div class="drawer-actions">
+        <a href="contact.html#enquiry" class="btn btn-primary" style="width: 100%;">Book a Viewing</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    
+    <!-- Product Detail View -->
+    <section class="product-detail-hero">
+      <div class="container">
+        
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="collection.html">The Collection</a>
+          <span>/</span>
+          <span id="breadcrumb-current-piece" style="color: var(--text-heading); font-weight: 500;">Georgian Writing Table</span>
+        </nav>
+
+        <div class="detail-layout-grid">
+          
+          <!-- Left Media Frame -->
+          <div class="detail-gallery-wrap">
+            <div class="detail-main-image-frame">
+              <img id="detail-image" src="assets/images/collection/products/product-01.jpg" alt="Selected furniture piece" width="1200" height="900">
+            </div>
+          </div>
+
+          <!-- Right Piece Information & Specs -->
+          <div class="detail-content-wrap">
+            
+            <div class="detail-meta-header">
+              <span class="detail-era-tag" id="detail-era-label">Georgian &middot; Circa 1780</span>
+              <h1 class="detail-piece-title" id="detail-title">Georgian Mahogany Writing Table</h1>
+            </div>
+
+            <p class="body-lead" id="detail-summary" style="font-size: 1.0625rem; line-height: 1.7;">
+              A refined writing table with a balanced silhouette, cockbeaded twin frieze drawers, and naturally aged timber with original brass drop handles.
+            </p>
+
+            <!-- Specification Table -->
+            <table class="detail-specs-table" aria-label="Piece Specifications">
+              <tbody>
+                <tr>
+                  <th scope="row">Period &amp; Origin</th>
+                  <td id="detail-spec-period">Georgian (1714 &ndash; 1837) &middot; England</td>
+                </tr>
+                <tr>
+                  <th scope="row">Primary Material</th>
+                  <td id="detail-spec-material">Solid Cuban Mahogany, Hand-Cast Brass</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dimensions</th>
+                  <td id="detail-spec-dimensions">Height: 76cm &middot; Width: 122cm &middot; Depth: 64cm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Spatial Scale</th>
+                  <td id="detail-spec-scale">Medium (Study / Library / Salon)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Conservation</th>
+                  <td id="detail-spec-condition">Conserved in-house. Original patina and joinery preserved. Traditional beeswax luster.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="detail-actions-box">
+              <a href="contact.html?type=viewing#enquiry" class="btn btn-primary" id="detail-viewing-btn">Book Gallery Viewing</a>
+              <a href="collection.html" class="btn btn-secondary">Back to Collection</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       GLOBAL FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <!-- COLUMN 1 — BRAND -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Maison Relique Homepage">
+            <span class="brand-monogram" aria-hidden="true">
+              <svg class="monogram-svg" width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="14" fill="#25211E"/>
+                <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#B08A57" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+                <path d="M32 9 C30 13 26 14 24 14 C26 15 30 16 32 20 C34 16 38 15 40 14 C38 14 34 13 32 9 Z" fill="#B08A57"/>
+                <path d="M32 55 C30 51 26 50 24 50 C26 49 30 48 32 44 C34 48 38 49 40 50 C38 50 34 51 32 55 Z" fill="#B08A57"/>
+              </svg>
+            </span>
+            <span class="brand-text-group">
+              <span class="brand-title">Maison Relique</span>
+              <span class="brand-subtitle">Antique &amp; Vintage Furniture</span>
+            </span>
+          </a>
+          <p class="footer-description">
+            A curated collection of antique and vintage furniture, selected for its character, craftsmanship and enduring presence.
+          </p>
+        </div>
+
+        <!-- COLUMN 2 — QUICK LINKS -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="collection.html" class="footer-link">Collection</a></li>
+            <li><a href="our-story.html" class="footer-link">About</a></li>
+            <li><a href="restoration.html" class="footer-link">Restoration</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3 — COLLECTION -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Collection</h4>
+          <ul class="footer-links">
+            <li><a href="collection.html#era-index" class="footer-link">By Era</a></li>
+            <li><a href="collection.html#category-index" class="footer-link">By Category</a></li>
+            <li><a href="collection.html" class="footer-link">View Collection</a></li>
+            <li><a href="collection.html#selection" class="footer-link">Featured Pieces</a></li>
+            <li><a href="collection.html#between" class="footer-link">Latest Arrivals</a></li>
+          </ul>
+        </div>
+
+                <!-- COLUMN 4 — VISITING -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Visiting</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html#enquiry" class="footer-link">Private Viewing</a></li>
+            <li><a href="contact.html#enquiry" class="footer-link">Book a Viewing</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="contact.html#plan-visit" class="footer-link">Viewing Guide</a></li>
+            <li><a href="contact.html#plan-visit" class="footer-link">Visiting Hours</a></li>
+            <li><a href="contact.html#plan-visit" class="footer-link">Directions</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Maison Relique. Independent Antique &amp; Vintage Furniture Gallery.</p>
+        <div class="footer-legal-links">
+          <a href="#site-header" class="legal-link">Privacy Policy</a>
+          <span class="legal-separator" aria-hidden="true">&bull;</span>
+          <a href="#site-header" class="legal-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Viewing Modal -->
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" id="viewing-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title" class="heading-md">Book a Private Viewing</h3>
+        <button type="button" class="icon-btn" id="modal-close-btn" aria-label="Close booking modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="viewing-booking-form">
+          <p class="body-lead" style="margin-bottom: 1.5rem; font-size: 0.9375rem;">
+            Experience our curated pieces in person. We will reserve the piece for your private inspection.
+          </p>
+          <div class="form-group">
+            <label for="viewing-name" class="form-label">Full Name</label>
+            <input type="text" id="viewing-name" class="form-input" placeholder="e.g. Eleanor Vance" required>
+          </div>
+          <div class="form-group">
+            <label for="viewing-era" class="form-label">Period or Piece</label>
+            <select id="viewing-era" class="form-select">
+              <option value="georgian">Georgian (1714 &ndash; 1837)</option>
+              <option value="victorian">Victorian (1837 &ndash; 1901)</option>
+              <option value="edwardian">Edwardian (1901 &ndash; 1910)</option>
+              <option value="art-deco">Art Deco (1920 &ndash; 1939)</option>
+              <option value="mid-century">Mid-Century (1945 &ndash; 1970)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="viewing-notes" class="form-label">Preferred Date &amp; Notes</label>
+            <textarea id="viewing-notes" class="form-textarea" rows="3" placeholder="Let us know your preferred date/time..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Request Appointment</button>
+        </form>
+        <div id="modal-success-state" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <h4 class="heading-md" style="margin-bottom: 0.5rem;">Viewing Request Received</h4>
+          <p class="body-lead" style="font-size: 0.9375rem;">Thank you. We will confirm your private gallery viewing shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CLIENT LOGIN / ACCOUNT MODAL (GLOBAL USER RULE)
+       ============================================================ -->
+  <div class="modal-backdrop" id="login-modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+      <div class="modal-header">
+        <h3 id="login-modal-title" class="heading-md">Client Sign In</h3>
+        <button type="button" class="icon-btn" id="login-modal-close-btn" aria-label="Close login modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form id="login-form">
+          <p class="body-lead" style="margin-bottom: 1.5rem; font-size: 0.9375rem;">
+            Welcome back to Maison Relique. Access your saved pieces, curated collection notes, and private viewing history.
+          </p>
+
+          <div class="form-group">
+            <label for="login-email" class="form-label">Email Address</label>
+            <input type="email" id="login-email" class="form-input" placeholder="e.g. collector@maisonrelique.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+              <label for="login-password" class="form-label" style="margin-bottom: 0;">Password</label>
+              <a href="#" class="form-helper-link" style="font-size: 0.8125rem; color: var(--color-secondary);">Forgot password?</a>
+            </div>
+            <input type="password" id="login-password" class="form-input" placeholder="••••••••" required autocomplete="current-password">
+          </div>
+
+          <div class="form-group" style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
+            <input type="checkbox" id="login-remember" style="accent-color: var(--color-secondary); width: 16px; height: 16px; cursor: pointer;">
+            <label for="login-remember" style="font-size: 0.875rem; color: var(--text-muted); cursor: pointer; user-select: none;">Remember this device</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Sign In to Account</button>
+
+          <div style="text-align: center; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px dashed var(--border-color); font-size: 0.875rem; color: var(--text-muted);">
+            New collector? <a href="contact.html#enquiry" style="color: var(--color-secondary); font-weight: 600;">Request Private Client Access</a>
+          </div>
+        </form>
+
+        <div id="login-success-state" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="color: var(--color-secondary); margin-bottom: 1rem;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto;" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h4 class="heading-md" style="margin-bottom: 0.5rem;">Welcome to Maison Relique</h4>
+          <p class="body-lead" style="font-size: 0.9375rem;">
+            You are signed in as a private client. Your preferences and viewing requests are active.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

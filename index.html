@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAISON RELIQUE — Antique &amp; Vintage Furniture Store</title>
+  <meta name="description" content="Discover antique and vintage furniture selected for its character, craftsmanship and enduring presence. Pieces with a past. Spaces with a story.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & DM Sans (Modern Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       GLOBAL NAVBAR (DESKTOP, TABLET & MOBILE)
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo with MR Monogram -->
+      <a href="index.html" class="brand-logo" aria-label="Maison Relique Homepage">
+        <span class="brand-monogram" aria-hidden="true">
+          <svg class="monogram-svg" width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="14" fill="#3A2921" class="monogram-bg"/>
+            <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#B08A57" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+            <path d="M32 9 C30 13 26 14 24 14 C26 15 30 16 32 20 C34 16 38 15 40 14 C38 14 34 13 32 9 Z" fill="#B08A57"/>
+            <path d="M32 55 C30 51 26 50 24 50 C26 49 30 48 32 44 C34 48 38 49 40 50 C38 50 34 51 32 55 Z" fill="#B08A57"/>
+            <g>
+              <path d="M15 43 L15 21 L18.5 21 L26.5 36.5 L34.5 21 L38 21 L38 43 L34.5 43 L34.5 26.5 L27.8 39.5 L25.2 39.5 L18.5 26.5 L18.5 43 Z" fill="#F5EFE4"/>
+              <path d="M31 43 L31 21 L41.5 21 C45.5 21 48 23.5 48 27 C48 29.5 46.5 31.5 44 32.5 L49 43 L44.8 43 L40.2 33 L34.8 33 L34.8 43 Z M34.8 29.2 L41.2 29.2 C43.2 29.2 44.5 28.2 44.5 26.8 C44.5 25.4 43.2 24.5 41.2 24.5 L34.8 24.5 Z" fill="#B08A57"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text-group">
+          <span class="brand-title">Maison Relique</span>
+          <span class="brand-subtitle">Antique &amp; Vintage Furniture</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation (1281px+) -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        
+        <!-- Home Dropdown -->
+        <div class="nav-dropdown-wrapper">
+          <button type="button" class="dropdown-toggle nav-link active" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dropdown-menu" role="menu" aria-labelledby="homeDropdownBtn">
+            <a href="index.html" class="dropdown-item active" role="menuitem">Home 1</a>
+            <a href="home2.html" class="dropdown-item" role="menuitem">Home 2</a>
+          </div>
+        </div>
+        
+        <!-- Direct Menu Links (Full Navigation) -->
+        <a href="our-story.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="journal.html" class="nav-link">Gallery</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Controls (Theme, RTL, Login, Hamburger) -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="icon-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <!-- RTL / LTR Toggle Button -->
+        <button type="button" class="icon-btn rtl-toggle-btn" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Direction">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"></path><path d="M14 6l6 6-6 6"></path><path d="M10 18l-6-6 6-6"></path></svg>
+        </button>
+
+        <!-- Desktop Book a Viewing CTA Button (1281px+) -->
+        <a href="contact.html#enquiry" class="btn btn-primary nav-cta-btn">Book a Viewing</a>
+
+        <!-- Hamburger Menu Button (Visible on Tablet & Mobile) -->
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE & TABLET DRAWER NAVIGATION (USER GLOBAL RULE)
+       ============================================================ -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+
+  <nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile and Tablet Navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Maison Relique">
+        <span class="brand-monogram" aria-hidden="true">
+          <svg class="monogram-svg" width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="14" fill="#3A2921" class="monogram-bg"/>
+            <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#B08A57" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+            <g>
+              <path d="M15 43 L15 21 L18.5 21 L26.5 36.5 L34.5 21 L38 21 L38 43 L34.5 43 L34.5 26.5 L27.8 39.5 L25.2 39.5 L18.5 26.5 L18.5 43 Z" fill="#F5EFE4"/>
+              <path d="M31 43 L31 21 L41.5 21 C45.5 21 48 23.5 48 27 C48 29.5 46.5 31.5 44 32.5 L49 43 L44.8 43 L40.2 33 L34.8 33 L34.8 43 Z M34.8 29.2 L41.2 29.2 C43.2 29.2 44.5 28.2 44.5 26.8 C44.5 25.4 43.2 24.5 41.2 24.5 L34.8 24.5 Z" fill="#B08A57"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text-group">
+          <span class="brand-title">Maison Relique</span>
+          <span class="brand-subtitle">Antique &amp; Vintage Furniture</span>
+        </span>
+      </a>
+      <button type="button" class="icon-btn" id="drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <ul class="drawer-nav-list">
+        <!-- Home Submenu -->
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-nav-link drawer-submenu-toggle expanded" aria-expanded="true">
+            <span>Home</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="drawer-submenu open">
+            <a href="index.html" class="drawer-sublink active">Home 1</a>
+            <a href="home2.html" class="drawer-sublink">Home 2</a>
+          </div>
+        </li>
+
+        <li class="drawer-nav-item">
+          <a href="our-story.html" class="drawer-nav-link">About</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="products.html" class="drawer-nav-link">Products</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="journal.html" class="drawer-nav-link">Gallery</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="blog.html" class="drawer-nav-link">Blog</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="contact.html" class="drawer-nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Controls in Drawer -->
+      <div class="drawer-controls">
+        <button type="button" class="drawer-control-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <span class="theme-btn-label">Dark Mode</span>
+        </button>
+
+        <button type="button" class="drawer-control-btn rtl-toggle-btn" aria-label="Toggle Direction">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"></path><path d="M14 6l6 6-6 6"></path><path d="M10 18l-6-6 6-6"></path></svg>
+          <span class="rtl-btn-label">RTL View</span>
+        </button>
+      </div>
+
+      <!-- Drawer CTAs -->
+      <div class="drawer-actions">
+        <a href="contact.html#enquiry" class="btn btn-primary" style="width: 100%;">Book a Viewing</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         SECTION 1 — EDITORIAL HERO
+         ============================================================ -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Editorial Text Area -->
+          <div class="hero-content">
+            <span class="eyebrow">Maison Relique Gallery</span>
+            <h1 class="heading-xl hero-headline">
+              <span>Pieces with a past.</span>
+              <span class="editorial-italic">Spaces with a story.</span>
+            </h1>
+            <p class="body-lead hero-description">
+              Discover antique and vintage furniture selected for its character, craftsmanship and enduring presence.
+            </p>
+            <div class="hero-ctas">
+              <a href="collection.html" class="btn btn-primary">Explore the Collection</a>
+              <a href="contact.html#enquiry" class="btn btn-secondary">Book a Viewing</a>
+            </div>
+          </div>
+
+          <!-- Large Visual Composition -->
+          <div class="hero-media-wrapper">
+            <div class="hero-image-frame">
+              <img src="assets/images/home/hero.jpg" alt="Editorial interior featuring a restored antique French sideboard and aged wooden flooring under natural daylight" width="1376" height="768" loading="eager" fetchpriority="high">
+              <div class="hero-caption-tag">
+                <span>The Salon Collection · Circa 1880</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — CURATED COLLECTION
+         ============================================================ -->
+    <section class="curated-section section-padding" id="curated">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="eyebrow">Selected for Character</span>
+          <h2 class="heading-lg">A Collection That Doesn't Need to Shout.</h2>
+          <p class="body-lead" style="max-width: 680px; margin: 1.25rem auto 0;">
+            A considered selection of antique and vintage furniture chosen for materials, craftsmanship, patina and the stories carried through years of use.
+          </p>
+        </div>
+
+        <div class="curated-grid">
+          
+          <!-- Card 01 -->
+          <article class="furniture-card">
+            <div class="card-image-wrap">
+              <img src="assets/images/home/curated-01.jpg" alt="French Oak Sideboard with visible grain and aged brass drop handles" width="1200" height="896" loading="lazy">
+              <span class="card-badge">Late 19th C.</span>
+            </div>
+            <div class="card-content">
+              <span class="card-meta">Solid French Oak</span>
+              <h3 class="card-title">French Oak Sideboard</h3>
+              <p class="card-description">
+                Featuring hand-carved panel details, authentic beeswax luster, and solid brass drop pulls with centuries of natural patina.
+              </p>
+              <div class="card-footer">
+                <span class="card-cta">
+                  <span>View Details</span>
+                  <svg class="rtl-mirror" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 02 -->
+          <article class="furniture-card">
+            <div class="card-image-wrap">
+              <img src="assets/images/home/curated-02.jpg" alt="Victorian Writing Desk with carved walnut finish and linen chair" width="1200" height="896" loading="lazy">
+              <span class="card-badge">Circa 1895</span>
+            </div>
+            <div class="card-content">
+              <span class="card-meta">English Walnut</span>
+              <h3 class="card-title">Victorian Writing Desk</h3>
+              <p class="card-description">
+                Hand-cut dovetail drawers, fluted turned legs with original brass casters, and a richly patinated writing surface.
+              </p>
+              <div class="card-footer">
+                <span class="card-cta">
+                  <span>View Details</span>
+                  <svg class="rtl-mirror" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 03 -->
+          <article class="furniture-card">
+            <div class="card-image-wrap">
+              <img src="assets/images/home/curated-03.jpg" alt="Art Deco Lounge Chair in cream bouclé textured upholstery with bent walnut arms" width="1200" height="896" loading="lazy">
+              <span class="card-badge">Circa 1932</span>
+            </div>
+            <div class="card-content">
+              <span class="card-meta">Walnut &amp; Bouclé</span>
+              <h3 class="card-title">Art Deco Lounge Chair</h3>
+              <p class="card-description">
+                Sweeping continuous bentwood armrests, sculptural low profile, and reupholstered in heavy textured natural bouclé.
+              </p>
+              <div class="card-footer">
+                <span class="card-cta">
+                  <span>View Details</span>
+                  <svg class="rtl-mirror" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 04 -->
+          <article class="furniture-card">
+            <div class="card-image-wrap">
+              <img src="assets/images/home/curated-04.jpg" alt="Tall Carved Walnut Cabinet with hand-carved relief doors and brass keyholes" width="1200" height="896" loading="lazy">
+              <span class="card-badge">Circa 1870</span>
+            </div>
+            <div class="card-content">
+              <span class="card-meta">Carved Walnut</span>
+              <h3 class="card-title">Carved Walnut Cabinet</h3>
+              <p class="card-description">
+                Intricate figurative wood relief carvings, dark antique wax finish, and robust iron lock mechanisms intact.
+              </p>
+              <div class="card-footer">
+                <span class="card-cta">
+                  <span>View Details</span>
+                  <svg class="rtl-mirror" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="section-footer-cta">
+          <a href="#era" class="btn btn-secondary">View the Collection</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — BROWSE BY ERA
+         ============================================================ -->
+    <section class="era-section section-padding" id="era">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="eyebrow">Browse by Era</span>
+          <h2 class="heading-lg">Find the Period That Speaks to You.</h2>
+          <p class="body-lead" style="max-width: 640px; margin: 1.25rem auto 0;">
+            Explore distinct design sensibilities across centuries of master woodwork and architectural furniture design.
+          </p>
+        </div>
+
+        <div class="era-grid">
+          
+          <!-- 01 Georgian -->
+          <a href="#curated" class="era-card" aria-label="Explore Georgian Era Collection">
+            <div class="era-image-wrap">
+              <img src="assets/images/home/georgian.jpg" alt="Georgian mahogany dining table with Chippendale chairs in sunlit room" width="896" height="1200" loading="lazy">
+              <div class="era-overlay"></div>
+              <span class="era-number">01</span>
+            </div>
+            <div class="era-content">
+              <h3 class="era-name">Georgian</h3>
+              <span class="era-years">1714 – 1837</span>
+              <p class="era-desc">Classical symmetry, rich Cuban mahogany, and restrained elegance.</p>
+              <span class="era-explore">
+                <span>Explore Era</span>
+                <svg class="rtl-mirror" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- 02 Victorian -->
+          <a href="#curated" class="era-card" aria-label="Explore Victorian Era Collection">
+            <div class="era-image-wrap">
+              <img src="assets/images/home/victorian.jpg" alt="Victorian walnut credenza and deep velvet armchair in parlor" width="896" height="1200" loading="lazy">
+              <div class="era-overlay"></div>
+              <span class="era-number">02</span>
+            </div>
+            <div class="era-content">
+              <h3 class="era-name">Victorian</h3>
+              <span class="era-years">1837 – 1901</span>
+              <p class="era-desc">Ornate walnut carvings, rich velvet upholstery, and deep romantic tones.</p>
+              <span class="era-explore">
+                <span>Explore Era</span>
+                <svg class="rtl-mirror" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- 03 Edwardian -->
+          <a href="#curated" class="era-card" aria-label="Explore Edwardian Era Collection">
+            <div class="era-image-wrap">
+              <img src="assets/images/home/edwardian.jpg" alt="Edwardian bright sunlit reading table and slender wooden chair" width="896" height="1200" loading="lazy">
+              <div class="era-overlay"></div>
+              <span class="era-number">03</span>
+            </div>
+            <div class="era-content">
+              <h3 class="era-name">Edwardian</h3>
+              <span class="era-years">1901 – 1910</span>
+              <p class="era-desc">Airy lightness, refined slender silhouettes, and luminous domestic charm.</p>
+              <span class="era-explore">
+                <span>Explore Era</span>
+                <svg class="rtl-mirror" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- 04 Art Deco -->
+          <a href="#curated" class="era-card" aria-label="Explore Art Deco Collection">
+            <div class="era-image-wrap">
+              <img src="assets/images/home/art-deco.jpg" alt="Art Deco geometric macassar ebony console and arched mirror" width="896" height="1200" loading="lazy">
+              <div class="era-overlay"></div>
+              <span class="era-number">04</span>
+            </div>
+            <div class="era-content">
+              <h3 class="era-name">Art Deco</h3>
+              <span class="era-years">1920 – 1939</span>
+              <p class="era-desc">Geometric confidence, exotic macassar ebony, and brass accents.</p>
+              <span class="era-explore">
+                <span>Explore Era</span>
+                <svg class="rtl-mirror" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- 05 Mid-Century -->
+          <a href="#curated" class="era-card" aria-label="Explore Mid-Century Vintage Collection">
+            <div class="era-image-wrap">
+              <img src="assets/images/home/mid-century.jpg" alt="Mid-Century teak sideboard and low-profile lounge chair" width="896" height="1200" loading="lazy">
+              <div class="era-overlay"></div>
+              <span class="era-number">05</span>
+            </div>
+            <div class="era-content">
+              <h3 class="era-name">Mid-Century</h3>
+              <span class="era-years">1945 – 1970</span>
+              <p class="era-desc">Clean organic timber curves, teak warmth, and timeless functional comfort.</p>
+              <span class="era-explore">
+                <span>Explore Era</span>
+                <svg class="rtl-mirror" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — THE DETAILS THAT MATTER
+         ============================================================ -->
+    <section class="details-section section-padding" id="details">
+      <div class="container">
+        <div class="details-grid">
+          
+          <!-- Macro Detail Image -->
+          <div class="details-media">
+            <div class="details-image-frame">
+              <img src="assets/images/home/details.jpg" alt="Macro close-up of antique solid brass drop pull handle on aged walnut wood with natural patina" width="1200" height="896" loading="lazy">
+              <div class="details-caption-pill">
+                <span>Macro Study · Hand-Forged Brass &amp; Walnut</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Text & Breakdown -->
+          <div class="details-content">
+            <span class="eyebrow">The Details Are the Story</span>
+            <h2 class="heading-lg">Look Closer.</h2>
+            <p class="body-lead" style="margin-top: 1rem;">
+              True antique furniture is never defined merely by age, but by the tangible hallmarks of artisan human touch:
+            </p>
+
+            <div class="details-list">
+              <div class="detail-item">
+                <h3 class="detail-item-title">Natural Patina</h3>
+                <p class="detail-item-text">Gentle oxidation and hand-rubbed wax finishes developed over decades of living.</p>
+              </div>
+
+              <div class="detail-item">
+                <h3 class="detail-item-title">Quarter-Sawn Grain</h3>
+                <p class="detail-item-text">Old-growth timber with dense ring structure and deep natural luster.</p>
+              </div>
+
+              <div class="detail-item">
+                <h3 class="detail-item-title">Hand-Forged Brass</h3>
+                <p class="detail-item-text">Cast metal escutcheons, handles, and hinges showing honest tool marks.</p>
+              </div>
+
+              <div class="detail-item">
+                <h3 class="detail-item-title">Traditional Joinery</h3>
+                <p class="detail-item-text">Hand-cut dovetails, mortise-and-tenon joints engineered for generations.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5 — FURNITURE WITH A STORY
+         ============================================================ -->
+    <section class="story-section section-padding" id="story">
+      <div class="container">
+        <div class="story-grid">
+          
+          <!-- Story Editorial Content -->
+          <div class="story-content">
+            <span class="eyebrow">Furniture with a Story</span>
+            <h2 class="heading-lg">The Marks of Time Are Part of the Beauty.</h2>
+            
+            <blockquote class="story-quote">
+              &ldquo;Every scratch, softened edge, joint and change in tone can tell part of an object's history.&rdquo;
+            </blockquote>
+
+            <p class="body-lead story-paragraph">
+              We celebrate the quiet narratives held within seasoned timber. An antique does not conceal its passage through time; its honesty, softened angles, and hand-cut construction carry a presence no modern mass manufacture can replicate.
+            </p>
+
+            <div>
+              <a href="#curated" class="btn btn-primary">Discover the Story</a>
+            </div>
+          </div>
+
+          <!-- Asymmetric Visual Composition (Main Room + Dovetail Inset) -->
+          <div class="story-visual-composition">
+            <div class="story-main-frame">
+              <img src="assets/images/home/story-main.jpg" alt="Atmospheric antique library with writing desk and book-lined walls under natural sunlight" width="1200" height="896" loading="lazy">
+            </div>
+            
+            <div class="story-detail-frame">
+              <img src="assets/images/home/story-detail.jpg" alt="Macro detail of authentic hand-cut dovetail woodworking joint in solid oak drawer" width="1200" height="896" loading="lazy">
+              <span class="story-detail-tag">Hand-Cut Dovetail</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 — RESTORATION PREVIEW
+         ============================================================ -->
+    <section class="restoration-section section-padding" id="restoration">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="eyebrow">Restoration</span>
+          <h2 class="heading-lg">Preserve the Character. Restore What Time Has Worn.</h2>
+          <p class="body-lead" style="max-width: 680px; margin: 1.25rem auto 0;">
+            Our workshop approach respects historic integrity. We stabilize joints, refresh organic wax finishes, and revive fabrics while preserving every trace of authentic character.
+          </p>
+        </div>
+
+        <div class="restoration-interactive-wrap">
+          
+          <!-- Before Card -->
+          <div class="restoration-side">
+            <div class="restoration-img-box">
+              <img src="assets/images/home/restoration-before.jpg" alt="Antique wooden armchair before restoration showing aged surface wear and faded finish" width="1000" height="750" loading="lazy">
+              <span class="restoration-label label-before">Before</span>
+            </div>
+            <div class="restoration-info">
+              <h4>Surface Wear &amp; Aged Finish</h4>
+              <p>Faded finish, micro-scratches on carved timber arms, and tired historical fabric before intervention.</p>
+            </div>
+          </div>
+
+          <!-- After Card -->
+          <div class="restoration-side">
+            <div class="restoration-img-box">
+              <img src="assets/images/home/restoration-after.jpg" alt="Antique wooden armchair after master artisan restoration with rich French polish and fresh linen" width="1000" height="750" loading="lazy">
+              <span class="restoration-label label-after">After</span>
+            </div>
+            <div class="restoration-info">
+              <h4>Preserved Patina &amp; Revived Luster</h4>
+              <p>Hand-rubbed beeswax polish, fortified joinery, and tailored natural linen upholstery respecting the original era.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-footer-cta">
+          <a href="restoration.html" class="btn btn-secondary">Explore Restoration</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 — PRIVATE VIEWING CTA
+         ============================================================ -->
+    <section class="viewing-section" id="viewing">
+      <div class="container">
+        <div class="viewing-banner-card">
+          <img src="assets/images/home/viewing.jpg" class="viewing-bg-img" alt="Private viewing salon in antique gallery prepared with quiet curated furniture" width="1376" height="768" loading="lazy">
+          
+          <div class="viewing-card-content">
+            <span class="eyebrow">Private Viewing</span>
+            <h2 class="heading-lg">See the Pieces in Person.</h2>
+            <p>
+              Some pieces reveal their character best when you see the wood, proportion, texture and craftsmanship up close.
+            </p>
+            <p class="viewing-secondary-note">
+              Explore the collection at your own pace in our quiet showroom.
+            </p>
+            <div>
+              <a href="contact.html#enquiry" class="btn btn-brass">Book a Viewing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       HOMEPAGE FOOTER (REDESIGNED 4-COLUMN BRAND SYSTEM)
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- COLUMN 1 — BRAND -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Maison Relique Homepage">
+            <span class="brand-monogram" aria-hidden="true">
+              <svg class="monogram-svg" width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="14" fill="#25211E"/>
+                <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#B08A57" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+                <path d="M32 9 C30 13 26 14 24 14 C26 15 30 16 32 20 C34 16 38 15 40 14 C38 14 34 13 32 9 Z" fill="#B08A57"/>
+                <path d="M32 55 C30 51 26 50 24 50 C26 49 30 48 32 44 C34 48 38 49 40 50 C38 50 34 51 32 55 Z" fill="#B08A57"/>
+                <g>
+                  <path d="M15 43 L15 21 L18.5 21 L26.5 36.5 L34.5 21 L38 21 L38 43 L34.5 43 L34.5 26.5 L27.8 39.5 L25.2 39.5 L18.5 26.5 L18.5 43 Z" fill="#F5EFE4"/>
+                  <path d="M31 43 L31 21 L41.5 21 C45.5 21 48 23.5 48 27 C48 29.5 46.5 31.5 44 32.5 L49 43 L44.8 43 L40.2 33 L34.8 33 L34.8 43 Z M34.8 29.2 L41.2 29.2 C43.2 29.2 44.5 28.2 44.5 26.8 C44.5 25.4 43.2 24.5 41.2 24.5 L34.8 24.5 Z" fill="#B08A57"/>
+                </g>
+              </svg>
+            </span>
+            <span class="brand-text-group">
+              <span class="brand-title">Maison Relique</span>
+              <span class="brand-subtitle">Antique &amp; Vintage Furniture</span>
+            </span>
+          </a>
+          <p class="footer-description">
+            A curated collection of antique and vintage furniture, selected for its character, craftsmanship and enduring presence.
+          </p>
+          <div class="footer-social">
+            <a href="https://pinterest.com" class="social-icon-btn" aria-label="Maison Relique on Pinterest" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line><circle cx="12" cy="12" r="10"></circle></svg>
+            </a>
+            <a href="https://instagram.com" class="social-icon-btn" aria-label="Maison Relique on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Maison Relique on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://youtube.com" class="social-icon-btn" aria-label="Maison Relique on YouTube" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- COLUMN 2 — QUICK LINKS -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="collection.html" class="footer-link">Collection</a></li>
+            <li><a href="our-story.html" class="footer-link">About</a></li>
+            <li><a href="restoration.html" class="footer-link">Restoration</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3 — COLLECTION -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Collection</h4>
+          <ul class="footer-links">
+            <li><a href="collection.html#era-index" class="footer-link">By Era</a></li>
+            <li><a href="collection.html#category-index" class="footer-link">By Category</a></li>
+            <li><a href="collection.html" class="footer-link">View Collection</a></li>
+            <li><a href="collection.html#selection" class="footer-link">Featured Pieces</a></li>
+            <li><a href="collection.html#between" class="footer-link">Latest Arrivals</a></li>
+            <li><a href="collection.html#scale-guide" class="footer-link">Collection Guide</a></li>
+          </ul>
+        </div>
+
+                <!-- COLUMN 4 — VISITING -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Visiting</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html#enquiry" class="footer-link">Private Viewing</a></li>
+            <li><a href="contact.html#enquiry" class="footer-link">Book a Viewing</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="contact.html#plan-visit" class="footer-link">Viewing Guide</a></li>
+            <li><a href="contact.html#plan-visit" class="footer-link">Visiting Hours</a></li>
+            <li><a href="contact.html#plan-visit" class="footer-link">Directions</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar (Only ONE intentional secondary row) -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Maison Relique. Independent Antique &amp; Vintage Furniture Gallery.</p>
+        <div class="footer-legal-links">
+          <a href="#site-header" class="legal-link">Privacy Policy</a>
+          <span class="legal-separator" aria-hidden="true">&bull;</span>
+          <a href="#site-header" class="legal-link">Terms of Service</a>
+          <span class="legal-separator" aria-hidden="true">&bull;</span>
+          <a href="#site-header" class="legal-link">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       PRIVATE VIEWING BOOKING MODAL
+       ============================================================ -->
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" id="viewing-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title" class="heading-md">Book a Private Viewing</h3>
+        <button type="button" class="icon-btn" id="modal-close-btn" aria-label="Close booking modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form id="viewing-booking-form">
+          <p class="body-lead" style="margin-bottom: 1.5rem; font-size: 0.9375rem;">
+            Experience our curated pieces in a quiet, unhurried gallery setting. Please share your preferences below.
+          </p>
+
+          <div class="form-group">
+            <label for="viewing-name" class="form-label">Full Name</label>
+            <input type="text" id="viewing-name" class="form-input" placeholder="e.g. Eleanor Vance" required>
+          </div>
+
+          <div class="form-group">
+            <label for="viewing-era" class="form-label">Period or Piece of Interest</label>
+            <select id="viewing-era" class="form-select">
+              <option value="all">General Collection Viewing</option>
+              <option value="georgian">Georgian (1714 – 1837)</option>
+              <option value="victorian">Victorian (1837 – 1901)</option>
+              <option value="edwardian">Edwardian (1901 – 1910)</option>
+              <option value="art-deco">Art Deco (1920 – 1939)</option>
+              <option value="mid-century">Mid-Century (1945 – 1970)</option>
+              <option value="restoration">Restoration Consultation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="viewing-notes" class="form-label">Viewing Notes &amp; Preferred Time</label>
+            <textarea id="viewing-notes" class="form-textarea" rows="3" placeholder="Tell us if there is a specific piece you wish to inspect..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Request Appointment</button>
+        </form>
+
+        <div id="modal-success-state" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="color: var(--color-secondary); margin-bottom: 1rem;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto;" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h4 class="heading-md" style="margin-bottom: 0.5rem;">Viewing Request Received</h4>
+          <p class="body-lead" style="font-size: 0.9375rem;">
+            Thank you. We will prepare the gallery space for your visit and confirm your appointment shortly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CLIENT LOGIN / ACCOUNT MODAL (GLOBAL USER RULE)
+       ============================================================ -->
+  <div class="modal-backdrop" id="login-modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+      <div class="modal-header">
+        <h3 id="login-modal-title" class="heading-md">Client Sign In</h3>
+        <button type="button" class="icon-btn" id="login-modal-close-btn" aria-label="Close login modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form id="login-form">
+          <p class="body-lead" style="margin-bottom: 1.5rem; font-size: 0.9375rem;">
+            Welcome back to Maison Relique. Access your saved pieces, curated collection notes, and private viewing history.
+          </p>
+
+          <div class="form-group">
+            <label for="login-email" class="form-label">Email Address</label>
+            <input type="email" id="login-email" class="form-input" placeholder="e.g. collector@maisonrelique.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+              <label for="login-password" class="form-label" style="margin-bottom: 0;">Password</label>
+              <a href="#" class="form-helper-link" style="font-size: 0.8125rem; color: var(--color-secondary);">Forgot password?</a>
+            </div>
+            <input type="password" id="login-password" class="form-input" placeholder="••••••••" required autocomplete="current-password">
+          </div>
+
+          <div class="form-group" style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
+            <input type="checkbox" id="login-remember" style="accent-color: var(--color-secondary); width: 16px; height: 16px; cursor: pointer;">
+            <label for="login-remember" style="font-size: 0.875rem; color: var(--text-muted); cursor: pointer; user-select: none;">Remember this device</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Sign In to Account</button>
+
+          <div style="text-align: center; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px dashed var(--border-color); font-size: 0.875rem; color: var(--text-muted);">
+            New collector? <a href="contact.html#enquiry" style="color: var(--color-secondary); font-weight: 600;">Request Private Client Access</a>
+          </div>
+        </form>
+
+        <div id="login-success-state" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="color: var(--color-secondary); margin-bottom: 1rem;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto;" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h4 class="heading-md" style="margin-bottom: 0.5rem;">Welcome to Maison Relique</h4>
+          <p class="body-lead" style="font-size: 0.9375rem;">
+            You are signed in as a private client. Your preferences and viewing requests are active.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

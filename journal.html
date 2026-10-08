@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Blog &amp; Journal — Stories Worth Living With | MAISON RELIQUE</title>
+  <meta name="description" content="A curated editorial collection of thoughts on antique furniture, room perspective, craftsmanship, patina, restoration, and the quiet details of timeless living.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & DM Sans (Modern Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-journal">
+
+  <!-- ============================================================
+       GLOBAL NAVBAR (DESKTOP, TABLET & MOBILE)
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo with MR Monogram -->
+      <a href="index.html" class="brand-logo" aria-label="Maison Relique Homepage">
+        <span class="brand-monogram" aria-hidden="true">
+          <svg class="monogram-svg" width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="14" fill="#3A2921" class="monogram-bg"/>
+            <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#B08A57" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+            <path d="M32 9 C30 13 26 14 24 14 C26 15 30 16 32 20 C34 16 38 15 40 14 C38 14 34 13 32 9 Z" fill="#B08A57"/>
+            <path d="M32 55 C30 51 26 50 24 50 C26 49 30 48 32 44 C34 48 38 49 40 50 C38 50 34 51 32 55 Z" fill="#B08A57"/>
+            <g>
+              <path d="M15 43 L15 21 L18.5 21 L26.5 36.5 L34.5 21 L38 21 L38 43 L34.5 43 L34.5 26.5 L27.8 39.5 L25.2 39.5 L18.5 26.5 L18.5 43 Z" fill="#F5EFE4"/>
+              <path d="M31 43 L31 21 L41.5 21 C45.5 21 48 23.5 48 27 C48 29.5 46.5 31.5 44 32.5 L49 43 L44.8 43 L40.2 33 L34.8 33 L34.8 43 Z M34.8 29.2 L41.2 29.2 C43.2 29.2 44.5 28.2 44.5 26.8 C44.5 25.4 43.2 24.5 41.2 24.5 L34.8 24.5 Z" fill="#B08A57"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text-group">
+          <span class="brand-title">Maison Relique</span>
+          <span class="brand-subtitle">Antique &amp; Vintage Furniture</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation (1281px+) -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        
+        <!-- Home Dropdown -->
+        <div class="nav-dropdown-wrapper">
+          <button type="button" class="dropdown-toggle nav-link" id="homeDropdownBtn" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dropdown-menu" role="menu" aria-labelledby="homeDropdownBtn">
+            <a href="index.html" class="dropdown-item" role="menuitem">Home 1</a>
+            <a href="home2.html" class="dropdown-item" role="menuitem">Home 2</a>
+          </div>
+        </div>
+        
+        <!-- Direct Menu Links (Full Navigation) -->
+        <a href="our-story.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="journal.html" class="nav-link active" aria-current="page">Gallery</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Controls (Theme, RTL, Login, Hamburger) -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="icon-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Theme">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+
+        <!-- RTL / LTR Toggle Button -->
+        <button type="button" class="icon-btn rtl-toggle-btn" aria-label="Toggle Text Direction (RTL/LTR)" title="Toggle Direction">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"></path><path d="M14 6l6 6-6 6"></path><path d="M10 18l-6-6 6-6"></path></svg>
+        </button>
+
+        <!-- Desktop Book a Viewing CTA Button (1281px+) -->
+        <a href="contact.html#enquiry" class="btn btn-primary nav-cta-btn">Book a Viewing</a>
+
+        <!-- Hamburger Menu Button (Visible on Tablet & Mobile) -->
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE & TABLET DRAWER NAVIGATION (USER GLOBAL RULE)
+       ============================================================ -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+
+  <nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile and Tablet Navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Maison Relique">
+        <span class="brand-monogram" aria-hidden="true">
+          <svg class="monogram-svg" width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="14" fill="#3A2921" class="monogram-bg"/>
+            <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#B08A57" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+            <g>
+              <path d="M15 43 L15 21 L18.5 21 L26.5 36.5 L34.5 21 L38 21 L38 43 L34.5 43 L34.5 26.5 L27.8 39.5 L25.2 39.5 L18.5 26.5 L18.5 43 Z" fill="#F5EFE4"/>
+              <path d="M31 43 L31 21 L41.5 21 C45.5 21 48 23.5 48 27 C48 29.5 46.5 31.5 44 32.5 L49 43 L44.8 43 L40.2 33 L34.8 33 L34.8 43 Z M34.8 29.2 L41.2 29.2 C43.2 29.2 44.5 28.2 44.5 26.8 C44.5 25.4 43.2 24.5 41.2 24.5 L34.8 24.5 Z" fill="#B08A57"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-text-group">
+          <span class="brand-title">Maison Relique</span>
+          <span class="brand-subtitle">Antique &amp; Vintage Furniture</span>
+        </span>
+      </a>
+      <button type="button" class="icon-btn" id="drawer-close-btn" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <ul class="drawer-nav-list">
+        <!-- Home Submenu -->
+        <li class="drawer-nav-item">
+          <button type="button" class="drawer-nav-link drawer-submenu-toggle" aria-expanded="false">
+            <span>Home</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="drawer-submenu">
+            <a href="index.html" class="drawer-sublink">Home 1</a>
+            <a href="home2.html" class="drawer-sublink">Home 2</a>
+          </div>
+        </li>
+
+        <li class="drawer-nav-item">
+          <a href="our-story.html" class="drawer-nav-link">About</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="products.html" class="drawer-nav-link">Products</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="journal.html" class="drawer-nav-link active" aria-current="page">Gallery</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="blog.html" class="drawer-nav-link">Blog</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="contact.html" class="drawer-nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Controls in Drawer -->
+      <div class="drawer-controls">
+        <button type="button" class="drawer-control-btn theme-toggle-btn" aria-label="Toggle Dark / Light Theme">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <span class="theme-btn-label">Dark Mode</span>
+        </button>
+
+        <button type="button" class="drawer-control-btn rtl-toggle-btn" aria-label="Toggle Direction">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"></path><path d="M14 6l6 6-6 6"></path><path d="M10 18l-6-6 6-6"></path></svg>
+          <span class="rtl-btn-label">RTL View</span>
+        </button>
+      </div>
+
+      <!-- Drawer CTAs -->
+      <div class="drawer-actions">
+        <a href="contact.html#enquiry" class="btn btn-primary" style="width: 100%;">Book a Viewing</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT: EXACTLY 7 EDITORIAL BLOG SECTIONS
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- ============================================================
+         SECTION 1 — THE JOURNAL & BLOG (EDITORIAL MASTHEAD)
+         ============================================================ -->
+    <section class="journal-masthead-section" aria-labelledby="journal-masthead-title">
+      <div class="container">
+        
+        <!-- Magazine Masthead Bar -->
+        <div class="journal-masthead-bar">
+          <div class="masthead-meta-left">
+            <span class="masthead-tag">MAISON RELIQUE / BLOG</span>
+            <span class="masthead-divider" aria-hidden="true">|</span>
+            <span class="masthead-vol">VOL. IV &bull; ARCHIVE &amp; ESSAYS</span>
+          </div>
+          <div class="masthead-meta-right">
+            <span class="masthead-theme">ON TIME, LIVING &amp; CRAFTSMANSHIP</span>
+          </div>
+        </div>
+
+        <!-- Asymmetrical Magazine Grid -->
+        <div class="journal-masthead-grid">
+          
+          <!-- Left Column: Big Editorial Heading & Philosophy -->
+          <div class="masthead-content-col">
+            <span class="eyebrow journal-eyebrow">THE MAISON RELIQUE BLOG</span>
+            <h1 id="journal-masthead-title" class="journal-main-title">STORIES WORTH LIVING WITH.</h1>
+            
+            <div class="journal-title-rule" aria-hidden="true"></div>
+
+            <p class="journal-lead-text">
+              Furniture carries more than form. It carries evidence of hands, rooms, habits, materials and time. The Maison Relique Blog explores the ideas behind the pieces — and the ways they continue to shape the spaces around us.
+            </p>
+
+            <div class="journal-masthead-details">
+              <div class="masthead-detail-item">
+                <span class="detail-label">Curated Themes</span>
+                <span class="detail-val">Patina, Proportion &amp; Craft</span>
+              </div>
+              <div class="masthead-detail-item">
+                <span class="detail-label">Perspective</span>
+                <span class="detail-val">Slow Living &amp; Preservation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Asymmetric Editorial Photograph -->
+          <div class="masthead-visual-col">
+            <div class="masthead-image-frame">
+              <img src="assets/images/journal/journal-hero.jpg" alt="A serene antique French sideboard in a softly lit stone interior" width="1280" height="720" loading="eager">
+              <div class="masthead-caption">
+                <span class="caption-num">FIG. 01</span>
+                <span class="caption-text">An 18th-century provincial commode settled beneath soft morning window light.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — THE FEATURE STORY
+         ============================================================ -->
+    <section class="journal-feature-section" id="feature-story" aria-labelledby="feature-story-title">
+      <div class="container">
+        
+        <div class="journal-feature-header">
+          <div class="feature-tag-group">
+            <span class="eyebrow feature-eyebrow">THE FEATURE STORY</span>
+            <span class="feature-editorial-badge">MAISON RELIQUE EDITORIAL</span>
+          </div>
+          <h2 id="feature-story-title" class="journal-feature-title">WHY SOME FURNITURE ONLY GETS BETTER WITH TIME.</h2>
+        </div>
+
+        <!-- Large Cinematic Editorial Image -->
+        <div class="journal-feature-hero-media">
+          <div class="feature-image-wrapper">
+            <img src="assets/images/journal/feature-story.jpg" alt="An antique bureau desk with rich wood grain in a heritage library room" width="1600" height="900" loading="lazy">
+          </div>
+          <div class="feature-media-caption">
+            <span class="caption-badge">ESSAY NO. 18</span>
+            <span class="caption-note">The gentle softening of edges, hand-rubbed wax finishes, and honest marks of daily use.</span>
+          </div>
+        </div>
+
+        <!-- Long-Form Essay Spread -->
+        <div class="journal-essay-grid">
+          
+          <!-- Column 1: Editorial Introduction & Pullquote -->
+          <div class="essay-sidebar-col">
+            <div class="essay-sticky-box">
+              <blockquote class="editorial-pullquote">
+                <p>&ldquo;Perfection is an invention of modern mass production. An antique earns its grace not by staying pristine, but by remembering every year it has survived.&rdquo;</p>
+              </blockquote>
+              
+              <div class="essay-reading-meta">
+                <div class="meta-row">
+                  <span class="meta-key">Topic</span>
+                  <span class="meta-value">Material Longevity &amp; Patina</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-key">Reading Time</span>
+                  <span class="meta-value">6 Minutes</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-key">Archive Ref</span>
+                  <span class="meta-value">MR-BLOG-2026</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Deep Reading Essay Body -->
+          <div class="essay-body-col">
+            <p class="essay-lead-paragraph">
+              <span class="dropcap">W</span>e live in an era where newness is manufactured by the millions, yet very few contemporary objects possess the capacity to age with elegance. Modern composite materials degrade; they crack, delaminate, and lose their veneer. By contrast, an authentic 18th-century walnut writing desk or a 19th-century oak refectory table only deepens in color, warmth, and dignity as the decades advance.
+            </p>
+
+            <h3 class="essay-subheading">The Depth of Natural Timber &amp; Slow Growth</h3>
+            <p>
+              The wood harvested centuries ago came from old-growth European forests, where trees grew slowly under dense canopies. Their annular rings are tightly compressed, yielding dense, stable fibers that resist warping. When craftsmen shaped these planks with hand planes and adzes, they worked along the natural grain rather than forcing uniformity through industrial saws.
+            </p>
+            <p>
+              Over a century of seasonal expansion and contraction, the timber settles into a calm equilibrium. The oils within the wood migrate toward the surface, reacting with ambient air, candlelight, and beeswax to create an authentic amber luster that no modern spray lacquer could ever replicate.
+            </p>
+
+            <h3 class="essay-subheading">The Living Architecture of Joinery</h3>
+            <p>
+              Unlike modern fasteners that shear or loosen under strain, traditional joinery — through-dovetails, pegged mortise-and-tenon joints, and tongue-in-groove corner cleats — breathes alongside the timber. When a desk has been opened twenty thousand times, the friction of wood against wood burnishes the runners smooth as silk. The drawer does not jam; it glides with a quiet, satisfying weight.
+            </p>
+
+            <h3 class="essay-subheading">Why Perfection Is Never Desirable</h3>
+            <p>
+              A table that shows where elbows have rested, where sunlight has warmed the surface, and where ink once spilled is no longer just furniture. It is an enduring witness to human life. When we bring such a piece into our home, we are not simply filling a room — we are welcoming a companion that will outlive our own generation.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — OBJECTS WITH A PAST
+         ============================================================ -->
+    <section class="journal-objects-section" id="objects-past" aria-labelledby="objects-past-title">
+      <div class="container">
+        
+        <div class="section-intro-centered">
+          <span class="eyebrow">OBJECT ESSAYS</span>
+          <h2 id="objects-past-title" class="section-title">EVERY PIECE HAS MORE TO SAY THAN ITS SILHOUETTE.</h2>
+          <div class="title-separator" aria-hidden="true"></div>
+          <p class="section-description">
+            A closer look at the subtle details, structural decisions, and tactile nuances that reveal how historical furniture was meant to be lived with.
+          </p>
+        </div>
+
+        <!-- 3 Staggered Editorial Story Cards -->
+        <div class="objects-stories-staggered">
+          
+          <!-- Story 01: The Language of Legs -->
+          <article class="object-story-card story-card-01">
+            <div class="object-story-media">
+              <img src="assets/images/journal/object-legs.jpg" alt="Detail of carved cabriole furniture leg and fluted joint" width="800" height="600" loading="lazy">
+              <span class="story-badge">STORY 01</span>
+            </div>
+            <div class="object-story-content">
+              <span class="story-category">CONSTRUCTION &amp; STANCE</span>
+              <h3 class="story-heading">The Language of Legs</h3>
+              <p class="story-subheading">Turnings, Cabrioles, and the Grammar of Stance</p>
+              <p class="story-excerpt">
+                The way a piece meets the floor determines its entire posture in a room. From the sweeping serpentine curves of Queen Anne cabrioles to the quiet restraint of Georgian fluted legs, every profile was designed to provide structural stability while elevating the piece with effortless grace.
+              </p>
+              <div class="story-meta-footer">
+                <span class="story-curator-tag">MAISON RELIQUE EDITORIAL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Story 02: The Life of a Desk -->
+          <article class="object-story-card story-card-02 reversed">
+            <div class="object-story-media">
+              <img src="assets/images/journal/object-desk.jpg" alt="Antique bureau desk with leather inlay top and hand-cut dovetailed drawers" width="800" height="600" loading="lazy">
+              <span class="story-badge">STORY 02</span>
+            </div>
+            <div class="object-story-content">
+              <span class="story-category">INTIMATE HISTORIES</span>
+              <h3 class="story-heading">The Life of a Desk</h3>
+              <p class="story-subheading">Keyholes, Inkwells, and the Habit of Writing</p>
+              <p class="story-excerpt">
+                An antique desk is the most private object in any house. Within its miniature drawers, hidden pigeonholes, and patinated leather surfaces lie centuries of correspondences, quiet contemplations, and domestic ledgers. Running one’s hand over the worn walnut reveals the habits of forgotten owners.
+              </p>
+              <div class="story-meta-footer">
+                <span class="story-curator-tag">MAISON RELIQUE EDITORIAL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Story 03: When a Chair Becomes an Heirloom -->
+          <article class="object-story-card story-card-03">
+            <div class="object-story-media">
+              <img src="assets/images/journal/object-chair.jpg" alt="Carved vintage armchair with natural linen upholstery and weathered oak frame" width="800" height="600" loading="lazy">
+              <span class="story-badge">STORY 03</span>
+            </div>
+            <div class="object-story-content">
+              <span class="story-category">COMFORT &amp; LONGEVITY</span>
+              <h3 class="story-heading">When a Chair Becomes an Heirloom</h3>
+              <p class="story-subheading">Linen, Joinery, and Decades of Conversation</p>
+              <p class="story-excerpt">
+                A chair is personal in a way tables and cabinets can never be. It receives the human body directly. When crafted from seasoned solid walnut and upholstered with Belgian flax linen, a well-proportioned armchair becomes an anchor for conversation, reading, and contemplative repose.
+              </p>
+              <div class="story-meta-footer">
+                <span class="story-curator-tag">MAISON RELIQUE EDITORIAL</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — A ROOM, READ DIFFERENTLY
+         ============================================================ -->
+    <section class="journal-room-perspective-section" id="room-perspective" aria-labelledby="room-perspective-title">
+      <div class="container">
+        
+        <div class="room-perspective-header">
+          <span class="eyebrow">INTERIOR PHILOSOPHY</span>
+          <h2 id="room-perspective-title" class="journal-feature-title">A ROOM IS MORE THAN THE FURNITURE INSIDE IT.</h2>
+          <p class="room-perspective-subtitle">
+            How we arrange historical objects changes the cadence of our day. Three spatial perspectives on living harmoniously with pieces from the past.
+          </p>
+        </div>
+
+        <!-- Asymmetric Perspective Grid -->
+        <div class="room-perspective-grid">
+          
+          <!-- Left Large Hero Image -->
+          <div class="perspective-focal-column">
+            <div class="perspective-image-frame">
+              <img src="assets/images/journal/room-perspective.jpg" alt="Expansive classical living room with high ceilings and curated antique furniture" width="1600" height="900" loading="lazy">
+              <div class="perspective-image-overlay">
+                <span class="overlay-tag">SPATIAL HARMONY</span>
+                <p class="overlay-caption">Allowing generous negative space around an antique lets its silhouette resonate without visual noise.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side-Rail Observations -->
+          <div class="perspective-observations-column">
+            
+            <div class="perspective-observation-card">
+              <div class="obs-num">01</div>
+              <div class="obs-body">
+                <h3 class="obs-title">Proportion &amp; Air</h3>
+                <p class="obs-text">
+                  The space between objects is as deliberate as the objects themselves. Giving an antique commode or sofa room to breathe prevents a room from feeling like a museum archive and transforms it into a sanctuary of calm.
+                </p>
+              </div>
+            </div>
+
+            <div class="perspective-observation-card">
+              <div class="obs-num">02</div>
+              <div class="obs-body">
+                <h3 class="obs-title">Light as a Material</h3>
+                <p class="obs-text">
+                  Natural daylight moving across hand-waxed mahogany and aged French limestone creates dynamic shadows that artificial lighting can never replicate. Position key pieces where changing sunbeams trace their contours.
+                </p>
+              </div>
+            </div>
+
+            <div class="perspective-observation-card">
+              <div class="obs-num">03</div>
+              <div class="obs-body">
+                <h3 class="obs-title">Memory in the Everyday</h3>
+                <p class="obs-text">
+                  Juxtaposing an 18th-century writing table with contemporary art and modern ceramics allows both to shine. It sparks an effortless, unforced dialogue between different centuries of human imagination.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5 — THE COLLECTOR'S NOTEBOOK
+         ============================================================ -->
+    <section class="journal-notebook-section" id="collectors-notebook" aria-labelledby="notebook-title">
+      <div class="container">
+        
+        <div class="section-intro-centered">
+          <span class="eyebrow">CURATOR'S OBSERVATIONS</span>
+          <h2 id="notebook-title" class="section-title">WHAT SHOULD YOU NOTICE BEFORE YOU FALL IN LOVE WITH A PIECE?</h2>
+          <div class="title-separator" aria-hidden="true"></div>
+          <p class="section-description">
+            A practical field guide to looking past superficial polish and evaluating authentic structure, joinery, timber quality, and genuine historical patina.
+          </p>
+        </div>
+
+        <!-- 2-Column Notebook Spread -->
+        <div class="notebook-spread-grid">
+          
+          <!-- Left Column: Visual Notebook Flat Lay + Sticky Curator Note -->
+          <div class="notebook-visual-col">
+            <div class="notebook-sticky-wrap">
+              <div class="notebook-media-card">
+                <img src="assets/images/journal/collectors-notebook.jpg" alt="Collector notebook flat lay with furniture sketches, magnifying glass, and antique brass hardware" width="800" height="600" loading="lazy">
+              </div>
+              <div class="curator-field-note">
+                <h3 class="field-note-title">The Curator&rsquo;s Rule</h3>
+                <p class="field-note-text">
+                  &ldquo;Always look underneath, behind, and inside. The unseen areas of a piece tell the honest truth about when, how, and with what reverence it was built.&rdquo;
+                </p>
+                <span class="field-note-sig">MAISON RELIQUE EDITORIAL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 5 Structured Collector Guidelines -->
+          <div class="notebook-guidelines-col">
+            
+            <div class="guideline-card">
+              <div class="guideline-header">
+                <span class="guideline-index">01</span>
+                <h3 class="guideline-heading">Proportion &amp; Silhouette</h3>
+              </div>
+              <p class="guideline-desc">
+                Step back three paces before touching anything. A master craftsman possessed an instinctive grasp of classical geometry. If a leg appears too thick or a cornice too shallow, the piece may have been modified or re-assembled over its lifespan.
+              </p>
+            </div>
+
+            <div class="guideline-card">
+              <div class="guideline-header">
+                <span class="guideline-index">02</span>
+                <h3 class="guideline-heading">Joinery &amp; Dovetails</h3>
+              </div>
+              <p class="guideline-desc">
+                Examine the drawer sides. Authentic hand-cut dovetails are slightly irregular, narrow at the neck, and display delicate hand-saw kerf marks. Perfectly uniform, machine-cut dovetails indicate post-1880 industrial manufacturing.
+              </p>
+            </div>
+
+            <div class="guideline-card">
+              <div class="guideline-header">
+                <span class="guideline-index">03</span>
+                <h3 class="guideline-heading">Condition vs. Character</h3>
+              </div>
+              <p class="guideline-desc">
+                Distinguish honest age from structural decay. Minor woodworm holes that have been treated, small shrinkage splits in solid panels, and worn footrests are signs of authenticity; active instability or modern polyurethane varnishes are cause for hesitation.
+              </p>
+            </div>
+
+            <div class="guideline-card">
+              <div class="guideline-header">
+                <span class="guideline-index">04</span>
+                <h3 class="guideline-heading">Hardware &amp; Escutcheons</h3>
+              </div>
+              <p class="guideline-desc">
+                Look behind drawer pulls for older mounting holes. Original cast brass handles have subtle irregularities and deep oxidation in the recesses. Replaced hardware is common, but original hardware significantly preserves historical integrity.
+              </p>
+            </div>
+
+            <div class="guideline-card">
+              <div class="guideline-header">
+                <span class="guideline-index">05</span>
+                <h3 class="guideline-heading">Patina &amp; Surface Depth</h3>
+              </div>
+              <p class="guideline-desc">
+                True patina cannot be faked in a laboratory. It is a warm, semi-translucent glow created by decades of friction, atmospheric exposure, and natural beeswax. It feels silky, cool, and tactile under fingertips.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 — LETTER FROM THE WORKROOM
+         ============================================================ -->
+    <section class="journal-workroom-letter-section" id="workroom-letter" aria-labelledby="workroom-letter-title">
+      <div class="container">
+        
+        <div class="workroom-letter-frame">
+          
+          <div class="workroom-header">
+            <span class="eyebrow workroom-eyebrow">FROM THE RESTORERS</span>
+            <h2 id="workroom-letter-title" class="workroom-title">THE QUIET WORK OF KEEPING THINGS BEAUTIFUL.</h2>
+            <span class="workroom-dispatch-tag">WORKROOM DISPATCH &bull; NO. 09</span>
+          </div>
+
+          <div class="workroom-letter-body">
+            
+            <div class="workroom-visual">
+              <img src="assets/images/journal/workroom-letter.jpg" alt="Artisanal workshop still life with antique hand tools, natural beeswax polish, and wood shavings" width="1000" height="750" loading="lazy">
+              <span class="workroom-caption">Traditional hide glue pots, Japanese waterstones, and hand-blended beeswax in our workshop.</span>
+            </div>
+
+            <div class="workroom-text-column">
+              <p class="workroom-p-lead">
+                Every week in our workroom, we receive pieces that have survived wars, migrations, and shifting decorative vogues. Our greatest responsibility is knowing when to put our tools down.
+              </p>
+              
+              <blockquote class="workroom-blockquote">
+                <p>&ldquo;We do not restore to make a piece look brand new. We restore to ensure it can keep living its own quiet life for another hundred years.&rdquo;</p>
+              </blockquote>
+
+              <p>
+                Too much antique restoration in the modern world is aggressive. Chemical strippers scour away the delicate amber film that took two centuries to form. Modern synthetic urethanes seal the timber in a glassy plastic cocoon, preventing the wood from breathing.
+              </p>
+
+              <p>
+                Our philosophy is simple: we intervene only where structural integrity requires it. We re-glue failed mortises using traditional reversible animal hide glues that can be dismantled without injury in the next century. We mend loose veneers with matching salvaged timbers. And we finish every surface with organic beeswax and pure turpentine, buffed exclusively by hand.
+              </p>
+
+              <div class="workroom-signoff">
+                <span class="signoff-signature">Maison Relique Conservation Guild</span>
+                <span class="signoff-meta">MAISON RELIQUE EDITORIAL &bull; WORKROOM ARCHIVES</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 — KEEP READING (CLOSING & PATHWAYS)
+         ============================================================ -->
+    <section class="journal-closing-section" id="keep-reading" aria-labelledby="keep-reading-title">
+      <div class="container">
+        
+        <div class="journal-closing-grid">
+          
+          <!-- Left Mood Image -->
+          <div class="closing-mood-media">
+            <div class="closing-image-wrapper">
+              <img src="assets/images/journal/journal-closing.jpg" alt="A peaceful study corner with antique bookcase, leather-bound books, and warm lamplight" width="1280" height="720" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Right Content & Exploration Pathways -->
+          <div class="closing-pathways-content">
+            <span class="eyebrow">CONTINUE THE JOURNEY</span>
+            <h2 id="keep-reading-title" class="journal-feature-title">THERE IS ALWAYS ANOTHER STORY IN THE ROOM.</h2>
+            <p class="closing-narrative">
+              Whether you are curating a single centerpiece for your study or looking to understand how historical craftsmanship can ground modern living, explore our related chapters.
+            </p>
+
+            <div class="pathway-links-list">
+              
+              <a href="collection.html" class="pathway-item">
+                <div class="pathway-info">
+                  <span class="pathway-cat">CURATED INVENTORY</span>
+                  <h3 class="pathway-title">Explore the Collection</h3>
+                  <p class="pathway-desc">View our current acquisitions spanning Georgian, Victorian, Edwardian, and Mid-Century periods.</p>
+                </div>
+                <div class="pathway-arrow" aria-hidden="true">&rarr;</div>
+              </a>
+
+              <a href="restoration.html" class="pathway-item">
+                <div class="pathway-info">
+                  <span class="pathway-cat">WORKROOM ETHOS</span>
+                  <h3 class="pathway-title">Discover Restoration</h3>
+                  <p class="pathway-desc">Learn about our reversible repair techniques, natural finishes, and preservation philosophy.</p>
+                </div>
+                <div class="pathway-arrow" aria-hidden="true">&rarr;</div>
+              </a>
+
+              <a href="our-story.html" class="pathway-item">
+                <div class="pathway-info">
+                  <span class="pathway-cat">ABOUT THE GALLERY</span>
+                  <h3 class="pathway-title">Read Our Story</h3>
+                  <p class="pathway-desc">The founding vision behind Maison Relique and our enduring reverence for timeless craft.</p>
+                </div>
+                <div class="pathway-arrow" aria-hidden="true">&rarr;</div>
+              </a>
+
+            </div>
+
+            <div class="closing-booking-cta">
+              <a href="contact.html#enquiry" class="btn btn-primary">Book a Private Viewing</a>
+              <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       GLOBAL FOOTER (MATCHING INDEX PAGE EXACTLY)
+       ============================================================ -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      
+      <!-- Footer Top (Single Row 4-Column Grid on Desktop) -->
+      <div class="footer-top">
+        
+        <!-- COLUMN 1 — BRAND & ETHOS -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Maison Relique Homepage">
+            <span class="brand-monogram" aria-hidden="true">
+              <svg class="monogram-svg" width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="64" rx="14" fill="#3A2921" class="monogram-bg"/>
+                <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#B08A57" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+                <path d="M32 9 C30 13 26 14 24 14 C26 15 30 16 32 20 C34 16 38 15 40 14 C38 14 34 13 32 9 Z" fill="#B08A57"/>
+                <path d="M32 55 C30 51 26 50 24 50 C26 49 30 48 32 44 C34 48 38 49 40 50 C38 50 34 51 32 55 Z" fill="#B08A57"/>
+                <g>
+                  <path d="M15 43 L15 21 L18.5 21 L26.5 36.5 L34.5 21 L38 21 L38 43 L34.5 43 L34.5 26.5 L27.8 39.5 L25.2 39.5 L18.5 26.5 L18.5 43 Z" fill="#F5EFE4"/>
+                  <path d="M31 43 L31 21 L41.5 21 C45.5 21 48 23.5 48 27 C48 29.5 46.5 31.5 44 32.5 L49 43 L44.8 43 L40.2 33 L34.8 33 L34.8 43 Z M34.8 29.2 L41.2 29.2 C43.2 29.2 44.5 28.2 44.5 26.8 C44.5 25.4 43.2 24.5 41.2 24.5 L34.8 24.5 Z" fill="#B08A57"/>
+                </g>
+              </svg>
+            </span>
+            <span class="brand-text-group">
+              <span class="brand-title">Maison Relique</span>
+              <span class="brand-subtitle">Antique &amp; Vintage Furniture</span>
+            </span>
+          </a>
+          <p class="footer-description">
+            A curated collection of antique and vintage furniture, selected for its character, craftsmanship and enduring presence.
+          </p>
+          <div class="footer-social">
+            <a href="https://pinterest.com" class="social-icon-btn" aria-label="Maison Relique on Pinterest" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line><circle cx="12" cy="12" r="10"></circle></svg>
+            </a>
+            <a href="https://instagram.com" class="social-icon-btn" aria-label="Maison Relique on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Maison Relique on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://youtube.com" class="social-icon-btn" aria-label="Maison Relique on YouTube" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- COLUMN 2 — QUICK LINKS -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="collection.html" class="footer-link">Collection</a></li>
+            <li><a href="our-story.html" class="footer-link">About</a></li>
+            <li><a href="restoration.html" class="footer-link">Restoration</a></li>
+            <li><a href="blog.html" class="footer-link active" aria-current="page">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3 — COLLECTION -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Collection</h4>
+          <ul class="footer-links">
+            <li><a href="collection.html#era-index" class="footer-link">By Era</a></li>
+            <li><a href="collection.html#category-index" class="footer-link">By Category</a></li>
+            <li><a href="collection.html" class="footer-link">View Collection</a></li>
+            <li><a href="collection.html#selection" class="footer-link">Featured Pieces</a></li>
+            <li><a href="collection.html#between" class="footer-link">Latest Arrivals</a></li>
+            <li><a href="collection.html#scale-guide" class="footer-link">Collection Guide</a></li>
+          </ul>
+        </div>
+
+                <!-- COLUMN 4 — VISITING -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Visiting</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html#enquiry" class="footer-link">Private Viewing</a></li>
+            <li><a href="contact.html#enquiry" class="footer-link">Book a Viewing</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="contact.html#plan-visit" class="footer-link">Viewing Guide</a></li>
+            <li><a href="contact.html#plan-visit" class="footer-link">Visiting Hours</a></li>
+            <li><a href="contact.html#plan-visit" class="footer-link">Directions</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar (Only ONE intentional secondary row) -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Maison Relique. Independent Antique &amp; Vintage Furniture Gallery.</p>
+        <div class="footer-legal-links">
+          <a href="#site-header" class="legal-link">Privacy Policy</a>
+          <span class="legal-separator" aria-hidden="true">&bull;</span>
+          <a href="#site-header" class="legal-link">Terms of Service</a>
+          <span class="legal-separator" aria-hidden="true">&bull;</span>
+          <a href="#site-header" class="legal-link">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       PRIVATE VIEWING BOOKING MODAL
+       ============================================================ -->
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" id="viewing-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title" class="heading-md">Book a Private Viewing</h3>
+        <button type="button" class="icon-btn" id="modal-close-btn" aria-label="Close booking modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form id="viewing-booking-form">
+          <p class="body-lead" style="margin-bottom: 1.5rem; font-size: 0.9375rem;">
+            Experience our curated pieces in a quiet, unhurried gallery setting. Please share your preferences below.
+          </p>
+
+          <div class="form-group">
+            <label for="viewing-name" class="form-label">Full Name</label>
+            <input type="text" id="viewing-name" class="form-input" placeholder="e.g. Eleanor Vance" required>
+          </div>
+
+          <div class="form-group">
+            <label for="viewing-era" class="form-label">Period or Piece of Interest</label>
+            <select id="viewing-era" class="form-select">
+              <option value="all">General Collection Viewing</option>
+              <option value="georgian">Georgian (1714 &ndash; 1837)</option>
+              <option value="victorian">Victorian (1837 &ndash; 1901)</option>
+              <option value="edwardian">Edwardian (1901 &ndash; 1910)</option>
+              <option value="art-deco">Art Deco (1920 &ndash; 1939)</option>
+              <option value="mid-century">Mid-Century (1945 &ndash; 1970)</option>
+              <option value="restoration">Restoration Consultation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="viewing-notes" class="form-label">Viewing Notes &amp; Preferred Time</label>
+            <textarea id="viewing-notes" class="form-textarea" rows="3" placeholder="Tell us if there is a specific piece you wish to inspect..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Request Appointment</button>
+        </form>
+
+        <div id="modal-success-state" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="color: var(--color-secondary); margin-bottom: 1rem;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto;" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h4 class="heading-md" style="margin-bottom: 0.5rem;">Viewing Request Received</h4>
+          <p class="body-lead" style="font-size: 0.9375rem;">
+            Thank you. We will prepare the gallery space for your visit and confirm your appointment shortly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CLIENT LOGIN / ACCOUNT MODAL (GLOBAL USER RULE)
+       ============================================================ -->
+  <div class="modal-backdrop" id="login-modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-modal-title">
+      <div class="modal-header">
+        <h3 id="login-modal-title" class="heading-md">Client Sign In</h3>
+        <button type="button" class="icon-btn" id="login-modal-close-btn" aria-label="Close login modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form id="login-form">
+          <p class="body-lead" style="margin-bottom: 1.5rem; font-size: 0.9375rem;">
+            Welcome back to Maison Relique. Access your saved pieces, curated collection notes, and private viewing history.
+          </p>
+
+          <div class="form-group">
+            <label for="login-email" class="form-label">Email Address</label>
+            <input type="email" id="login-email" class="form-input" placeholder="e.g. collector@maisonrelique.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+              <label for="login-password" class="form-label" style="margin-bottom: 0;">Password</label>
+              <a href="#" class="form-helper-link" style="font-size: 0.8125rem; color: var(--color-secondary);">Forgot password?</a>
+            </div>
+            <input type="password" id="login-password" class="form-input" placeholder="••••••••" required autocomplete="current-password">
+          </div>
+
+          <div class="form-group" style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
+            <input type="checkbox" id="login-remember" style="accent-color: var(--color-secondary); width: 16px; height: 16px; cursor: pointer;">
+            <label for="login-remember" style="font-size: 0.875rem; color: var(--text-muted); cursor: pointer; user-select: none;">Remember this device</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Sign In to Account</button>
+
+          <div style="text-align: center; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px dashed var(--border-color); font-size: 0.875rem; color: var(--text-muted);">
+            New collector? <a href="contact.html#enquiry" style="color: var(--color-secondary); font-weight: 600;">Request Private Client Access</a>
+          </div>
+        </form>
+
+        <div id="login-success-state" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="color: var(--color-secondary); margin-bottom: 1rem;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto;" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <h4 class="heading-md" style="margin-bottom: 0.5rem;">Welcome to Maison Relique</h4>
+          <p class="body-lead" style="font-size: 0.9375rem;">
+            You are signed in as a private client. Your preferences and viewing requests are active.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

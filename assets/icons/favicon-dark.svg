@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#25211E"/>
+  <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="3 1.5"/>
+  <rect x="5.5" y="5.5" width="53" height="53" rx="9" fill="none" stroke="#D4AF37" stroke-width="0.8" opacity="0.6"/>
+  <!-- Botanical / Acanthus Accents -->
+  <path d="M32 9 C30 13 26 14 24 14 C26 15 30 16 32 20 C34 16 38 15 40 14 C38 14 34 13 32 9 Z" fill="#D4AF37"/>
+  <path d="M32 55 C30 51 26 50 24 50 C26 49 30 48 32 44 C34 48 38 49 40 50 C38 50 34 51 32 55 Z" fill="#D4AF37"/>
+  <!-- Interlocking M & R Monogram -->
+  <g fill="#F5EFE4" stroke="#D4AF37" stroke-width="0.3">
+    <!-- Serif 'M' -->
+    <path d="M15 43 L15 21 L18.5 21 L26.5 36.5 L34.5 21 L38 21 L38 43 L34.5 43 L34.5 26.5 L27.8 39.5 L25.2 39.5 L18.5 26.5 L18.5 43 Z" fill="#F5EFE4"/>
+    <!-- Serif 'R' Interlocking with M -->
+    <path d="M31 43 L31 21 L41.5 21 C45.5 21 48 23.5 48 27 C48 29.5 46.5 31.5 44 32.5 L49 43 L44.8 43 L40.2 33 L34.8 33 L34.8 43 Z M34.8 29.2 L41.2 29.2 C43.2 29.2 44.5 28.2 44.5 26.8 C44.5 25.4 43.2 24.5 41.2 24.5 L34.8 24.5 Z" fill="#D4AF37"/>
+  </g>
+  <circle cx="32" cy="14.5" r="1" fill="#F5EFE4"/>
+  <circle cx="32" cy="49.5" r="1" fill="#F5EFE4"/>
+</svg>
